@@ -1,6 +1,6 @@
 {
     "name": "@thlion/tstl-dota-debug-fix",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Fix for missing Lua file path in Dota 2 Lua API",
     "keywords": [
         "dota",
