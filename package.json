@@ -1,0 +1,23 @@
+{
+    "name": "@thlion/tstl-dota-debug-fix",
+    "version": "1.0.0",
+    "description": "Fix for missing Lua file path in Dota 2 Lua API",
+    "keywords": [
+        "dota",
+        "lua",
+        "types",
+        "typescript"
+    ],
+    "license": "MIT",
+    "author": "ThLion_",
+    "files": [
+        "transformer/index.js"
+    ],
+    "dependencies": {
+        "lua-types": "^2.13.1"
+    },
+    "peerDependencies": {
+        "typescript": "^4.0.0 || ^5.0.0",
+        "@typescript-to-lua/language-extensions": "^1.0.0"
+    }
+}
