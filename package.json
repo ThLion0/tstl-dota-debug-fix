@@ -8,6 +8,9 @@
         "types",
         "typescript"
     ],
+    "homepage": "https://github.com/ThLion0/tstl-dota-debug-fix",
+    "bugs": "https://github.com/ThLion0/tstl-dota-debug-fix/issues",
+    "repository": "https://github.com/ThLion0/tstl-dota-debug-fix",
     "license": "MIT",
     "author": "ThLion_",
     "files": [
