@@ -7,6 +7,10 @@ import path from "path";
 
 const SOURCE_DIR = path.join(process.cwd(), "src", "vscripts");
 
+/**
+ * @param {string} fileName 
+ * @returns {string} normalized path to the file, converting the local path of the source file into a file path in `game` directory.
+ */
 function normalizeFilePath(fileName) {
     const relative = path.relative(SOURCE_DIR, fileName);
     const normalized = relative.replace(/\\/g, "/");
