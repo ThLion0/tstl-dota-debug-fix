@@ -39,6 +39,7 @@ Add the plugin to your TypeScriptToLua configuration.
 {
   "tstl": {
     "luaTarget": "JIT",
+    // important! don't forget to disable traceback because it uses debug!
     "sourceMapTraceback": false,
     "luaPlugins": [
       { "name": "@thlion/tstl-dota-debug-fix/transformer" }
