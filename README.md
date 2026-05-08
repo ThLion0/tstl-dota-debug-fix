@@ -71,8 +71,17 @@ export const registerModifier = (name?: string) => (modifier: new () => CDOTA_Mo
 }
 ```
 
+Please note that because the debug library is missing, the `getFileScope` function no longer works. You can replace it with a simple solution:
+
+```ts
+function getFileScope(): [any, string] {
+    return [getfenv(3), "unknown"];
+}
+```
+
 ## Notes
 
 * `sourceMapTraceback` should be disabled because the debug library (used for traceback output) is not available in the Dota 2 Lua runtime.
+* You can see that in the `getFileScope` function, we use the third environment level. This is because the third level allows us to register everything we need (abilities, modifiers, items, and entity functions).
 * The plugin is meant to be used with TypeScriptToLua-based Dota 2 projects.
 * The generated property name is `____file_path`.
